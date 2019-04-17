@@ -7,12 +7,21 @@
     <groupId>com.rs</groupId>
     <artifactId>petstore</artifactId>
     <version>1.0</version>
+    <properties>
+        <junit.version>LATEST</junit.version>
+    </properties>
     <packaging>pom</packaging>
 
     <modules>
         <module>futures</module>
     </modules>
-
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
