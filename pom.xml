@@ -14,6 +14,7 @@
 
     <modules>
         <module>futures</module>
+        <module>rx-demo</module>
     </modules>
     <dependencies>
         <dependency>
