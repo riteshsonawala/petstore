@@ -14,7 +14,7 @@ public class OperatorsDemo {
     }
 
     private static void demonstrateBuffer() {
-        Observable.fromArray("Ritesh", "Gyan", "Prashant", "Binny", "Sudhir", "Shibu", "Vinod")
+        Observable.fromArray("Ritesh", "Gyan", "Prashant", "Binny", "Sudhir", "Shibu", "Vinod", "Yogesh", "Vijay")
                 .buffer(2)
                 .subscribe(
                         (List<String> pair) -> {
