@@ -29,9 +29,6 @@ public class OperatorsDemo {
                 .scan(new StringBuilder(), StringBuilder::append)
                 .subscribe(s-> System.out.println(s));
     }
-
-
-
 }
 
 
