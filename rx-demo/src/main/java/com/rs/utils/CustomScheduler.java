@@ -11,8 +11,8 @@ public class CustomScheduler {
 
     public static void main(String[] args) {
         Observable<Integer> observable = Observable.range(1, 5000);
-        ExecutorService executorService=Executors.newFixedThreadPool(20);
+        ExecutorService executorService = Executors.newFixedThreadPool(20);
         Scheduler scheduler = Schedulers.from(executorService);
-        observable.subscribeOn(scheduler).doFinally(executorService::shutdown).subscribe(System.out::println, Throwable::printStackTrace, ()-> System.out.println("Done!"));
+        observable.subscribeOn(scheduler).doFinally(executorService::shutdown).subscribe(System.out::println, Throwable::printStackTrace, () -> System.out.println("Done!"));
     }
 }
