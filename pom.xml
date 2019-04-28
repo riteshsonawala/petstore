@@ -15,6 +15,7 @@
     <modules>
         <module>futures</module>
         <module>rx-demo</module>
+        <module>dynamic-proxy</module>
     </modules>
     <dependencies>
         <dependency>
